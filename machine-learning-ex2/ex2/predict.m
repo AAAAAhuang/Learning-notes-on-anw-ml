@@ -8,6 +8,8 @@ m = size(X, 1); % Number of training examples
 
 % You need to return the following variables correctly
 p = zeros(m, 1);
+pred = sigmoid(X * theta);
+p = (pred >= 0.5);
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Complete the following code to make predictions using
