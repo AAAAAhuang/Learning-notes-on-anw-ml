@@ -24,4 +24,5 @@ Linear regression with multiple variables</p>
 <li>plotting decision boundary, use <code>contour</code></li>
 </ul>
 <h2 id="ex3">EX3</h2>
+<p>Multiclass classification</p>
 
