@@ -25,4 +25,10 @@ Linear regression with multiple variables</p>
 </ul>
 <h2 id="ex3">EX3</h2>
 <p>Multiclass classification</p>
+<ul>
+<li>using extended logistic regression for one-vs-all classification, using ten classes and ten models for recognize ten digits, <code>fmincg</code> used.</li>
+<li>using NN: non-linear logistic is expensive to train, so normally for linear classification.  here just forward computing to predict.</li>
+</ul>
+<h2 id="ex4">EX4</h2>
+<p>NN implementation, including forward computation, bp algo, checking gradient and prediction</p>
 
