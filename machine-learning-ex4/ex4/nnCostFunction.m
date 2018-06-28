@@ -29,6 +29,37 @@ m = size(X, 1);
 J = 0;
 Theta1_grad = zeros(size(Theta1));
 Theta2_grad = zeros(size(Theta2));
+a1 = [ones(m, 1) X];
+z2 = a1 * Theta1';
+a2 = [ones(m, 1) sigmoid(z2)];
+z3 = a2 * Theta2';
+a3 = sigmoid(z3);
+for i = 1 : m
+    J = J - log(a3(i, y(i))) - sum(log(1 - a3(i, :))) + log(1 - a3(i, y(i)));
+end
+J = J / m;
+
+% Regularized implementation
+J = J + (sum(sum(Theta1(:, 2 : end).^2), 2) + sum(sum(Theta2(:, 2 : end).^2), 2)) * lambda / 2 / m;
+
+y_b = zeros(m, num_labels);
+for i = 1 : m
+    y_b(i, :) = ((1 : num_labels) == y(i));
+end
+
+Delta2 = zeros(size(Theta2));
+Delta1 = zeros(size(Theta1));
+for i = 1 : m
+    delta3 = a3(i, :) - y_b(i, :);
+    delta2 = delta3 * Theta2 .* sigmoidGradient([1 z2(i, :)]);
+    delta2 = delta2(2 : end);
+    Delta2 = Delta2 + delta3' * a2(i, :);
+    Delta1 = Delta1 + delta2' * a1(i, :);
+end
+Theta1_grad(:, 1) = Delta1(:, 1) ./ m;
+Theta1_grad(:, 2 : end) = Delta1(:, 2 : end) ./ m + Theta1(:, 2 : end) .* lambda ./ m;
+Theta2_grad(:, 1) = Delta2(:, 1) ./ m;
+Theta2_grad(:, 2 : end) = Delta2(:, 2 : end) ./ m + Theta2(:, 2 : end) .* lambda ./ m;
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: You should complete the code by working through the
