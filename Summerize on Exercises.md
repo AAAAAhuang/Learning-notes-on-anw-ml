@@ -25,4 +25,15 @@ Linear regression with multiple variables</p>
 </ul>
 <h2 id="ex3">EX3</h2>
 <p>Multiclass classification</p>
+<ul>
+<li>using extended logistic regression for one-vs-all classification, using ten classes and ten models for recognize ten digits, <code>fmincg</code> used.</li>
+<li>using NN: non-linear logistic is expensive to train, so normally for linear classification.  here just forward computing to predict.</li>
+</ul>
+<h2 id="ex4">EX4</h2>
+<p>NN implementation, including forward computation, bp algo, checking gradient and prediction, visualizing the parameters to see features extraction.</p>
+<h2 id="ex5">EX5</h2>
+<p>implement regularized linear regression, start with linear hypo(no regularization actually)</p>
+<p>learning plot with training size to locate whether it’s high bias or high variance<br>
+expand to polynomial features and execute linear regression, features normalization, change lambda to improve overfit, find the best lambda using validation set</p>
+<p>learning plot is better to be plotted use randomly selected examples i and calculate mean error.</p>
 
