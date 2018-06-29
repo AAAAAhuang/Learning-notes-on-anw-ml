@@ -48,4 +48,11 @@ useful to add training examples</p>
 </ul>
 <p>validation set for choosing the lambda, features numbers, degree of feature polynomial, numbers of hidden layer etc</p>
 <p>underfit benefited from lower computation always performs poorly, while higher model complexity with regularization and enough training example, good</p>
+<h3 id="examples-for-spam-classifier">Examples for spam classifier</h3>
+<p>use words as input features<br>
+Improve: add words, add complex features, adapt algo</p>
+<p>Error analysis: implement quickly, tese on validation set, plot learning curve<br>
+get numerical evaluation, ex: cross validation error</p>
+<h3 id="handling-skewed-data">Handling skewed data</h3>
+<p>accuracy …</p>
 
