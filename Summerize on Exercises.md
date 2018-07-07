@@ -36,4 +36,9 @@ Linear regression with multiple variables</p>
 <p>learning plot with training size to locate whether it’s high bias or high variance<br>
 expand to polynomial features and execute linear regression, features normalization, change lambda to improve overfit, find the best lambda using validation set</p>
 <p>learning plot is better to be plotted use randomly selected examples i and calculate mean error.</p>
+<h2 id="ex6">EX6</h2>
+<p>linear classification for 2D datasets, change C to see the fitting<br>
+use gaussien kernels<br>
+use validation set to choose C and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.43056em;"></span><span class="strut bottom" style="height: 0.43056em; vertical-align: 0em;"></span><span class="base"><span class="mord mathit" style="margin-right: 0.03588em;">σ</span></span></span></span></span> for gaussien kernels SVM</p>
+<p>Spam classifier</p>
 
