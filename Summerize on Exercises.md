@@ -41,4 +41,9 @@ expand to polynomial features and execute linear regression, features normalizat
 use gaussien kernels<br>
 use validation set to choose C and <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.43056em;"></span><span class="strut bottom" style="height: 0.43056em; vertical-align: 0em;"></span><span class="base"><span class="mord mathit" style="margin-right: 0.03588em;">σ</span></span></span></span></span> for gaussien kernels SVM</p>
 <p>Spam classifier</p>
+<h2 id="ex7">EX7</h2>
+<p>k-means for 2D datasets firstly and then apply to image compression–&gt;saving memory<br>
+PCA used for dimension reduction of 2D dataset, then applied for image dataset.–&gt; for less memory and fast learning rate</p>
+<p>PCA and k-means all work for dimension reduction.<br>
+PCA can also do for visualization of image of 3D(to 2D), that is  to visualize the image after k-means reduction to 2D plan.</p>
 
