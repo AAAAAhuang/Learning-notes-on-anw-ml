@@ -46,4 +46,7 @@ use validation set to choose C and <span class="katex--inline"><span class="kate
 PCA used for dimension reduction of 2D dataset, then applied for image dataset.–&gt; for less memory and fast learning rate</p>
 <p>PCA and k-means all work for dimension reduction.<br>
 PCA can also do for visualization of image of 3D(to 2D), that is  to visualize the image after k-means reduction to 2D plan.</p>
+<h2 id="ex8">EX8</h2>
+<p>anomaly detection algo for failing server 2D and then multi dimensions: use validation dataset to find the best epsilon by comparing F1-score, plot the outliers and contour.</p>
+<p>collaborative filtering for recommender system of movies</p>
 
